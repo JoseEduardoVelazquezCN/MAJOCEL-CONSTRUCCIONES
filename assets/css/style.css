@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* ESTILOS PRINCIPALES + NAVBAR  INICIO*/
+:root {
+    --primary: #ffffff;
+    --bluetoogle: #000D1A;
+    --bluedark: rgb(3, 30, 42);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-attachment: fixed;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1024%26quot%3b)' fill='none'%3e%3cuse xlink:href='%23SvgjsSymbol1031' x='0' y='0'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsSymbol1031' x='720' y='0'%3e%3c/use%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1024'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpath d='M-1 0 a1 1 0 1 0 2 0 a1 1 0 1 0 -2 0z' id='SvgjsPath1030'%3e%3c/path%3e%3cpath d='M-3 0 a3 3 0 1 0 6 0 a3 3 0 1 0 -6 0z' id='SvgjsPath1029'%3e%3c/path%3e%3cpath d='M-5 0 a5 5 0 1 0 10 0 a5 5 0 1 0 -10 0z' id='SvgjsPath1025'%3e%3c/path%3e%3cpath d='M2 -2 L-2 2z' id='SvgjsPath1026'%3e%3c/path%3e%3cpath d='M6 -6 L-6 6z' id='SvgjsPath1027'%3e%3c/path%3e%3cpath d='M30 -30 L-30 30z' id='SvgjsPath1028'%3e%3c/path%3e%3c/defs%3e%3csymbol id='SvgjsSymbol1031'%3e%3cuse xlink:href='%23SvgjsPath1025' x='30' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='30' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='30' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='30' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='30' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='30' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='30' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='30' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='30' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='30' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='90' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='90' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='90' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='90' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='90' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='90' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='90' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='90' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='90' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='90' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='150' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='150' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='150' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='150' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='150' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='150' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='150' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='150' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='150' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='150' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='210' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='210' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='210' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='210' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='210' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='210' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='210' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='210' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='210' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='210' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='270' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='270' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='270' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='270' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='270' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='270' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='270' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='270' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='270' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='270' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='330' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='330' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='330' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='330' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='330' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='330' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='330' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='330' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='330' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='330' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='390' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='390' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='390' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='390' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='390' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='390' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='390' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='390' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='390' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='390' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='450' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='450' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='450' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='510' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='510' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='510' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='510' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='510' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='510' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='510' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='510' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='510' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='510' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='570' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='570' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='570' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='570' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='570' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='570' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='570' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='570' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='570' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1029' x='570' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='630' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='630' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1028' x='630' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)' stroke-width='3'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1027' x='630' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='630' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='30' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='690' y='90' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='150' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='210' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1026' x='690' y='270' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='330' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='390' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='450' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1025' x='690' y='510' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3cuse xlink:href='%23SvgjsPath1030' x='690' y='570' stroke='rgba(189%2c 208%2c 233%2c 0.24)'%3e%3c/use%3e%3c/symbol%3e%3c/svg%3e");
+}
+.nav {
+    /*border-bottom: 1px solid var(--bluedark);*/
+    position: absolute;
+    /*fixed - pero se encima al nav*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /*box-shadow: 0 2px 7px 0 rgb(0, 13, 26, 0.37);*/
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__toggle {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 25px
+}
+
+.nav__toggle svg {
+    width: 2rem;
+    fill: var(--bluetoogle);
+}
+
+.nav__toggle svg:hover {
+    width: 2rem;
+    fill: var(--primary);
+    border: 0.5px solid var(--bluetoogle);
+    background-color: var(--bluetoogle);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.nav__toggle .close {
+    display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+    margin-top: -0px;
+    margin-right: 15px;
+
+
+}
+
+.nav__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.nav__menu li {
+    display: none;
+    list-style-type: none;
+}
+
+.nav__menu li:first-child {
+    display: block;
+    margin-right: auto;
+}
+
+.nav__menu a {
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px 10px 10px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.nav__menu a:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--bluetoogle);
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+}
+
+.nav__menu button {
+    color: rgb(3, 30, 42);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(3, 30, 42);
+    box-shadow: rgb(3, 30, 42);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px 0 rgba(31, 38, 135, 0.37);
+    transition: .3s;
+}
+
+.nav__menu button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 30, 42);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.menu__logo {
+    height: 60px;
+}
+
+.menu__logo img {
+    height: 100%;
+}
+
+#nav__checkbox:checked~ul.nav__menu li {
+    display: block;
+}
+
+#nav__checkbox:checked~label.nav__toggle .close {
+    display: block;
+}
+
+#nav__checkbox:checked~label.nav__toggle .menu {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .nav__toggle {
+        display: none;
+    }
+
+    .nav__menu {
+        flex-direction: row;
+    }
+
+    .nav__menu li {
+        display: block;
+    }
+}
+
+
+.inicio img {
+    width: 100%;
+    height: auto;
+
+}
+
+.descripcion {
+    margin-top: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.descripcion p {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.descripcion b{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.descripcion button {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(63, 63, 63);
+    color: #ffffff;
+}
+
+.descripcion button:hover {
+    color: #000D1A;
+    background-color: rgb(255, 255, 255);
+    border: 0.2px solid #000D1A;
+}
+
+.descripcion  a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(63, 63, 63);
+    color: #ffffff;
+}
+
+.descripcion a:hover {
+    color: #000D1A;
+    background-color: rgb(255, 255, 255);
+    border: 0.2px solid #000D1A;
+}
+
+.descripcion h4 {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.descripcion .info {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.descripcion .servicios {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    max-width: 700px;
+    text-align: justify;
+}
+
+.descripcion .servicios .ser {
+    color: #000D1A;
+    background-color: #f8f8f8;
+   
+    font-family: sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    -webkit-box-shadow: -1px 0px 31px 5px rgba(224, 224, 224, 1);
+    -moz-box-shadow: -1px 0px 31px 5px rgba(224, 224, 224, 1);
+    box-shadow: -1px 0px 31px 5px rgba(224, 224, 224, 1);
+}
+.descripcion .servicios .ser h5{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.descripcion .servicios h3{
+    text-align: center;
+    color: rgb(3, 30, 42);
+}
+
+@media (max-width: 600px) {
+    .descripcion h4 {
+        max-width: 400px;
+        text-align: justify;
+        margin: auto;
+        padding: 3px;
+    }
+
+    .descripcion .info h3 {
+        color: rgb(3, 30, 42);
+    }
+    .descripcion .info p {
+        max-width: 400px;
+        text-align: justify;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .descripcion .servicios {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+        max-width: 400px;
+        text-align: justify;
+        padding: 8px;
+    }
+
+    .descripcion .servicios {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: sans-serif;
+        max-width: 350px;
+        text-align: justify;
+    }
+    .descripcion .servicios h3{
+        text-align: center;
+        font-size: 35px;
+    }
+    .descripcion .servicios .ser h5{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+}
+
+/*A04-estilo Span.ir-arriba INICIO*/
+.ir-arriba {
+    display: none;
+    padding: 10px;
+    background-color: var(--bluetoogle);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 0.5px solid #000D1A;
+}
+
+@media (max-width: 600px) {
+    .ir-arriba {
+        display: none;
+        padding: 10px;
+        background-color: var(--bluetoogle);
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 20px;
+        box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: 0.5px solid #000D1A;
+    }
+}
+
+/* SEECTION_ contacto INICIO*/
+.contacto {
+    width: 100%;
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contacto .redes h1 {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contacto .redes .link {
+    width: 100%;
+    place-items: center;
+}
+
+.contacto .redes .link a {
+    color: #000D1A;
+    text-decoration: none;
+}
+
+.contacto .redes .link a:hover {
+    color: rgb(0, 70, 113);
+    transition: .4s;
+}
+
+.contacto .link {
+    display: grid;
+}
+
+.contacto .link i {
+    font-size: 30px;
+    padding-right: 7px;
+}
+
+/* SEECTION_ contacto FIN*/
+
+
+/* SEECTION_ formulario INICIO*/
+.formulario {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 35px;
+}
+
+.formulario h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.formulario .form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.formulario .form label {
+    font-weight: bold;
+    color: rgb(0, 70, 113);
+    margin-bottom: 8px;
+}
+
+.formulario .form input {
+    width: 95%;
+    padding: 10px;
+    border: 0.1px solid #000D1A;
+    margin-bottom: 20px;
+}
+
+.formulario .form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 0.1px solid #000D1A;
+}
+
+.formulario .form input:focus {
+    border: 1px solid #000D1A;
+}
+
+.formulario .form button {
+    width: 80px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #000D1A;
+    color: aliceblue;
+    background-color: #000D1A;
+    font-weight: bold;
+}
+
+.formulario .form button {
+    width: 80px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #000D1A;
+    font-weight: bold;
+}
+
+.formulario .form button:hover {
+    color: #000D1A;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0.2px solid #000D1A;
+}
+
+.formulario #trucazo {
+    opacity: 0;
+}
+
+@media (min-width: 600px) {
+    .formulario .form {
+        max-width: 1024px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+}
+
+/* SEECTION_ formulario FIN*/
+
+footer{
+    background-color: rgb(34, 34, 34);
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+footer span{
+    font-size:11px;
+}
