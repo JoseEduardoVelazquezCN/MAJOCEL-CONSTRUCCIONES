@@ -88,7 +88,7 @@ body{
     color: inherit;
     background-color: rgb(255, 255, 255);
     padding: 10px 10px 10px 10px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-decoration: none;
 }
 
@@ -159,6 +159,7 @@ body{
 .inicio img {
     width: 100%;
     height: auto;
+    margin-top: 90px;
 
 }
 
@@ -167,6 +168,7 @@ body{
     text-align: center;
     font-family: sans-serif;
     font-size: 25px;
+
 }
 
 .descripcion p {
@@ -228,6 +230,11 @@ body{
     font-family: sans-serif;
 }
 
+.descripcion .info p{
+    text-align: justify;
+    font-size: 21px;
+}
+
 .descripcion .servicios {
     margin-top: 25px;
     margin-left: auto;
@@ -249,6 +256,18 @@ body{
     -moz-box-shadow: -1px 0px 31px 5px rgba(224, 224, 224, 1);
     box-shadow: -1px 0px 31px 5px rgba(224, 224, 224, 1);
 }
+.descripcion .servicios .ser:hover, .descripcion .servicios .ser .direccion:hover{
+    background-color: rgb(143, 143, 143);
+    transition: 2s;
+    color: white;
+}
+
+.descripcion .servicios .ser img{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 200px;
+}
 .descripcion .servicios .ser h5{
   text-align: center;
   font-size: 30px;
@@ -257,6 +276,18 @@ body{
 .descripcion .servicios h3{
     text-align: center;
     color: rgb(3, 30, 42);
+}
+.descripcion .servicios .ser iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.descripcion .servicios .ser .direccion{
+    font-size: 19px;
+    font-weight: lighter;
+    color: #7c7c7c;
+    font-style: italic;
+    text-align: justify;
 }
 
 @media (max-width: 600px) {
@@ -304,7 +335,20 @@ body{
         font-size: 30px;
         font-weight: bold;
       }
-
+     
+    .descripcion .servicios .ser iframe{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        max-width: 300px;
+    }
+    .descripcion .servicios .ser .direccion{
+        font-size: 19px;
+        font-weight: 200;
+        color: #202020;
+        font-style: italic;
+        text-align: justify;
+    }
 }
 
 /*A04-estilo Span.ir-arriba INICIO*/
@@ -470,6 +514,7 @@ body{
         justify-content: space-around;
         margin-top: 25px;
     }
+
 }
 
 /* SEECTION_ formulario FIN*/
@@ -479,8 +524,10 @@ footer{
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-family: sans-serif;
+    text-align: center;
 }
 footer span{
     font-size:11px;
